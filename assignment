@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+</head>
+<body>
+    <h2>Steps to Success:</h2>
+    <ol type="I">
+        <li>Set your goals</li>
+        <li>Create a plan</li>
+        <li>Take action</li>
+        <li>Review progress</li>
+        <li>Adjust as needed</li>
+    </ol>
+
+    <h2>Beautiful Nature Image</h2>
+    <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" 
+         alt="Beautiful nature scene with a river and trees" 
+         width="500">
+
+    <h2>Contact List</h2>
+    <table border="1" cellpadding="8">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Smith</td>
+                <td>123 Main St, Anytown</td>
+                <td>555-0101</td>
+                <td>john.smith@example.com</td>
+            </tr>
+            <tr>
+                <td>Sarah Johnson</td>
+                <td>456 Oak Ave, Somewhere</td>
+                <td>555-0202</td>
+                <td>sarah.j@example.com</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>789 Pine Rd, Nowhere</td>
+                <td>555-0303</td>
+                <td>m.brown@example.com</td>
+            </tr>
+            <tr>
+                <td>Emily Davis</td>
+                <td>321 Elm Blvd, Anywhere</td>
+                <td>555-0404</td>
+                <td>emily.d@example.com</td>
+            </tr>
+            <tr>
+                <td>David Wilson</td>
+                <td>654 Maple Ln, Everywhere</td>
+                <td>555-0505</td>
+                <td>dwilson@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Registration Form</h2>
+    <form action="/register" method="POST">
+        <div>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="3">
+        </div>
+
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Create a password (min 8 characters)" required minlength="8">
+        </div>
+
+        <div>
+            <label for="birthdate">Date of Birth:</label><br>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+
+        <div>
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+            <input type="radio" id="prefer-not" name="gender" value="prefer-not">
+            <label for="prefer-not">Prefer not to say</label>
+        </div>
+
+        <div>
+            <label>Interests (select all that apply):</label><br>
+            <input type="checkbox" id="tech" name="interests" value="tech">
+            <label for="tech">Technology</label><br>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label><br>
+            <input type="checkbox" id="travel" name="interests" value="travel">
+            <label for="travel">Travel</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
